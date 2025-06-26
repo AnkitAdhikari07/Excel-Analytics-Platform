@@ -1,0 +1,54 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100% !important;
+  height: 100vh !important;
+  max-width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+body {
+ font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: rgb(212,233,218);
+  background-image: url(./Components/Assets/background2.png);
+  background-position: right;
+  background-repeat: no-repeat;
+ position: relative;
+ top: 5%;
+ overflow-y: hidden;
+ 
+}
+
+body.dashboard-page {
+  /* Remove background override to allow dashboard container background */
+  background: unset !important;
+  background-image: unset !important;
+  position: static !important;
+  top: 0 !important;
+  overflow-y: auto !important;
+  display: block !important;
+  justify-content: normal !important;
+  align-items: normal !important;
+}
+
+

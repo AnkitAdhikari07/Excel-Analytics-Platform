@@ -1,0 +1,146 @@
+/**
+ * LoginForm.css
+ * 
+ * Styles for the login form component
+ * Provides a modern, glass-morphism design with hover effects
+ */
+
+/* Main form container */
+.wrapper {
+    /* Container dimensions and positioning */
+    width: 420px;
+    margin: 5% auto;
+    padding: 30px 40px;
+    
+    /* Glass-morphism effect */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(80px);
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    border-radius: 10px;
+    
+    /* Positioning and layout */
+    position: relative;
+    color: #fff;
+}
+
+/* Form heading */
+.wrapper h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Input field container */
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    
+    /* Hover effect */
+    transition: transform 0.3s ease;
+}
+
+.input-box:hover {
+    transform: scale(1.05);
+}
+
+/* Input field styling */
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    
+    /* Border and padding */
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 20px 45px 20px 20px;
+    
+    /* Text and focus styles */
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    
+    /* Smooth transitions */
+    transition: all 0.3s ease;
+}
+
+/* Icon positioning */
+.input-box .icon {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+/* Remember me and forgot password section */
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #ffffff;
+    margin: 4px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+    
+    /* Hover effect */
+    transition: text-decoration 0.3s ease;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Submit button styling */
+.wrapper button {
+    width: 100%;
+    height: 45px;
+    
+    /* Button appearance */
+    background: #fff;
+    color: #333;
+    font-size: 16px;
+    font-weight: 700;
+    
+    /* Border and shadow */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    
+    /* Hover effects */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.wrapper button:hover{
+    background-color: rgb(212,233,218);
+    cursor: pointer;
+    transform: scale(1.05); /* slightly enlarge */
+}
+.wrapper .register-link{
+    font: size 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+
+.backgroundImg{
+    background-image: url("");
+}
