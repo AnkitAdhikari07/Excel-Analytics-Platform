@@ -1,0 +1,127 @@
+.container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  color: rgba(25, 22, 22, 0.87);
+}
+.title {
+  font-weight: 800;
+  color: #2563eb;
+}
+.summary {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+.summaryCard {
+  flex: 1;
+  min-width: 220px;
+  background: #f6f8fa;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 12px #e0e7ef;
+}
+.summaryLabel {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.summaryValue {
+  font-size: 32px;
+  font-weight: 900;
+}
+.valueUploads {
+  color: #2563eb;
+}
+.valueAnalyzed {
+  color: #22c55e;
+}
+.valueProcessing {
+  color: #f59e42;
+}
+.tableSection {
+  margin: 2rem 0;
+}
+.tableTitle {
+  font-weight: 700;
+  color: #2563eb;
+}
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #e0e7ef;
+}
+.table th {
+  background: #e0e7ff;
+  padding: 0.8rem;
+  text-align: center;
+}
+.table td {
+  padding: 0.8rem;
+}
+.table tr {
+  border-bottom: 1px solid #eee;
+}
+.statusAnalyzed {
+  color: #22c55e;
+  font-weight: 500;
+}
+.statusProcessing {
+  color: #f59e42;
+  font-weight: 500;
+}
+.actionBtn {
+  margin-right: 0.5rem;
+  color: #2563eb;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.actionBtnDownload {
+  color: #10b981;
+}
+.activitySection {
+  margin: 2rem 0;
+}
+.activityTitle {
+  font-weight: 700;
+  color: #2563eb;
+}
+.activityList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.activityItem {
+  margin-bottom: 10px;
+  padding: 0.7rem 1rem;
+  background: #f6f8fa;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #e0e7ef;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.activityAction {
+  font-weight: 600;
+  color: #2563eb;
+}
+.activityFile {
+  color: #22223b;
+}
+.activityDate {
+  color: #4a5568;
+  margin-left: auto;
+  font-size: 13px;
+}
+.chartPlaceholder {
+  margin: 2rem 0;
+  text-align: center;
+  color: #b5b5b5;
+  font-style: italic;
+} 

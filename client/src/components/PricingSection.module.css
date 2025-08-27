@@ -1,0 +1,201 @@
+.pricingSection {
+  background: #fff;
+  padding: 4rem 1.5rem 2.5rem 1.5rem;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(44,62,80,0.07);
+  max-width: 1200px;
+  margin: 4rem auto 2rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricingHeader {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.pricingTitle {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #22223b;
+  margin-bottom: 0.5rem;
+}
+.pricingSubtitle {
+  font-size: 1.15rem;
+  color: #64748b;
+  margin-bottom: 1.2rem;
+}
+.toggleWrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-top: 0.5rem;
+}
+.toggleSwitch {
+  position: relative;
+  display: inline-block;
+  width: 48px;
+  height: 26px;
+}
+.toggleSwitch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.toggleSlider {
+  position: absolute;
+  cursor: pointer;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: #e0e7ff;
+  border-radius: 16px;
+  transition: background 0.2s;
+}
+.toggleSwitch input:checked + .toggleSlider {
+  background: #2563eb;
+}
+.toggleSlider:before {
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  left: 3px;
+  bottom: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+}
+.toggleSwitch input:checked + .toggleSlider:before {
+  transform: translateX(22px);
+}
+.toggleActive {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  width: 100%;
+  max-width: 950px;
+  margin-bottom: 1.5rem;
+}
+.pricingCard {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(44,62,80,0.08);
+  padding: 2.2rem 1.5rem 2rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  transition: transform 0.18s, box-shadow 0.18s;
+  border: 2px solid transparent;
+  min-width: 0;
+  animation: fadein 0.7s cubic-bezier(.4,0,.2,1) both;
+}
+.pricingCard:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+  border-color: #2563eb22;
+}
+.highlight {
+  border: 2.5px solid #2563eb;
+  box-shadow: 0 8px 32px rgba(37,99,235,0.13);
+  z-index: 2;
+}
+.badge {
+  position: absolute;
+  top: 0.2rem;
+  right: 1.1rem;
+  background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  padding: 0.3rem 1.1rem;
+  border-radius: 999px;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  letter-spacing: 0.01em;
+}
+.planName {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+}
+.planPrice {
+  font-size: 2.1rem;
+  font-weight: 800;
+  color: #22223b;
+  margin-bottom: 1.1rem;
+  margin-top: 0.1rem;
+}
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.3rem 0;
+  width: 100%;
+}
+.featureItem {
+  font-size: 1.05rem;
+  color: #64748b;
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.ctaBtn {
+  background: linear-gradient(90deg, #2563eb 0%, #38bdf8 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 2.2rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.10);
+  transition: background 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+.ctaBtn:hover {
+  background: linear-gradient(90deg, #38bdf8 0%, #2563eb 100%);
+  box-shadow: 0 4px 16px rgba(37,99,235,0.13);
+  transform: translateY(-2px) scale(1.04);
+}
+.pricingNote {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.05rem;
+  margin-top: 1.2rem;
+  opacity: 0.95;
+}
+
+/* Animations */
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(30px) scale(0.98); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein {
+  animation: fadein 0.7s cubic-bezier(.4,0,.2,1) both;
+}
+@keyframes pop {
+  0% { opacity: 0; transform: scale(0.8); }
+  80% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-pop {
+  animation: pop 0.7s cubic-bezier(.4,0,.2,1) both;
+}
+
+@media (max-width: 900px) {
+  .pricingGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    max-width: 420px;
+  }
+  .pricingSection {
+    padding: 2.5rem 0.5rem 1.5rem 0.5rem;
+  }
+} 

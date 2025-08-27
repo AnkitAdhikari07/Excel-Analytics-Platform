@@ -1,0 +1,154 @@
+.dashboard-bg {
+  width: 100vw;
+  min-height: 100vh;
+  background: #f8fafc;
+  padding: 1px;
+  margin: 0;
+}
+.dashboard-card {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 32px #e0e7ef;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.dashboard-title {
+  color: #2563eb;
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+}
+.dropbox {
+  border: 2.5px dashed #b6c6f5;
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 4.2rem 0;
+  text-align: center;
+  color: #2563eb;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s;
+  box-shadow: none;
+  outline: none;
+  position: relative;
+}
+.dropbox-active {
+  border: 2.5px solid #2563eb;
+  background: #e0e7ff;
+  box-shadow: 0 4px 24px #b6c6f5;
+}
+.files-section {
+  margin-top: 1.5rem;
+}
+.files-title {
+  color: #1a202c;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.files-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #f8fafc;
+  border-radius: 8px;
+  overflow: hidden;
+  color: #000;
+}
+.files-table th {
+  background: #e0e7ff;
+  color: #2563eb;
+  padding: 0.8rem;
+  text-align: center;
+}
+.files-table td {
+  padding: 0.7rem 0.8rem;
+}
+.files-table tr {
+  border-bottom: 1px solid #e5e7eb;
+}
+.files-date {
+  color: #4a5568;
+}
+.analyze-btn {
+  background: linear-gradient(90deg, #2563eb 60%, #38bdf8 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #c7d2fe33;
+  transition: background 0.18s, transform 0.18s;
+}
+.analyze-btn:hover {
+  background: linear-gradient(90deg, #1d4ed8 60%, #38bdf8 100%);
+  transform: translateY(-2px) scale(1.04);
+}
+.delete-btn {
+  background: none;
+  border: none;
+  color: #e53e3e;
+  font-size: 1.8em;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  transition: color 0.18s, transform 0.18s;
+  vertical-align: middle;
+  padding-top: 0.5rem;
+}
+.delete-btn:hover {
+  color: #b91c1c;
+  transform: scale(1.2);
+}
+
+/* Responsive styles for Previous Files table */
+@media (max-width: 600px) {
+  .dashboard-card {
+    padding: 0.7rem 0.2rem;
+    margin: 0.5rem;
+  }
+  .files-table, .files-table thead, .files-table tbody, .files-table tr, .files-table th, .files-table td {
+    display: block;
+    width: 100%;
+  }
+  .files-table thead {
+    display: none;
+  }
+  .files-table tr {
+    margin-bottom: 1.2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #e0e7ef;
+    padding: 0.7rem 0.5rem;
+    border: none;
+  }
+  .files-table td {
+    padding: 0.6rem 0.7rem;
+    text-align: left;
+    position: relative;
+    border: none;
+    font-size: 1rem;
+  }
+  .files-table td:before {
+    content: attr(data-label);
+    font-weight: 700;
+    color: #2563eb;
+    display: block;
+    margin-bottom: 0.2rem;
+    font-size: 0.98rem;
+  }
+  .analyze-btn, .delete-btn {
+    margin-top: 0.5rem;
+    width:90%;
+    font-size: 1.1rem;
+    padding: 0.7rem 0;
+  }
+} 
